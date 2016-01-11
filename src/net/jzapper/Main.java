@@ -9,11 +9,11 @@ public class Main {
     /**
      * Generic punch doer
      *
-     * @param punchType the type of problem to do
+     * @param punchType the type of punch to do
      * @param numPunches the number of punches of this type to create
      */
     public static void doPunch(Class<? extends Punch> punchType, int numPunches) {
-        // now loop for problems and solve
+        // now loop for punch to give
         for (int i = 0; i < numPunches; ++i) {
             Punch p = PunchFactory.createPunch(punchType, i);
             p.printId();
