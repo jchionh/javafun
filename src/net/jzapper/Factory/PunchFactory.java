@@ -1,5 +1,6 @@
 package net.jzapper.Factory;
 
+import net.jzapper.Punches.ArithmeticHelp;
 import net.jzapper.Punches.Basic;
 import net.jzapper.Punches.Punch;
 
@@ -16,6 +17,9 @@ public class PunchFactory {
     public static Punch createPunch(Class<? extends Punch> t, int id) {
         if (t == Basic.class) {
             return new Basic(id);
+        }
+        if (t == ArithmeticHelp.class) {
+            return new ArithmeticHelp(id);
         }
         return null;
     }

@@ -1,6 +1,7 @@
 package net.jzapper;
 
 import net.jzapper.Factory.PunchFactory;
+import net.jzapper.Punches.ArithmeticHelp;
 import net.jzapper.Punches.Basic;
 import net.jzapper.Punches.Punch;
 
@@ -20,12 +21,12 @@ public class Main {
         }
     }
 
-
     /**
      * main entry point of the java program
      * @param args
      */
     public static void main(String[] args) {
-        doPunch(Basic.class, 3);
+        doPunch(Basic.class, 1);
+        doPunch(ArithmeticHelp.class, 1);
     }
 }
