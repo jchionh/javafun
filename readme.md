@@ -1,4 +1,4 @@
-=== javafun ===
+## javafun
 
 This is a program just for fun, that summarizes the hilarious encouters that I have experienced while programming in the Java world.
 
