@@ -16,6 +16,10 @@ public class ArithmeticParam {
         this.value = value;
     }
 
+    /**
+     * gets value stored in our member
+     * @return
+     */
     public int getValue() {
         return value;
     }

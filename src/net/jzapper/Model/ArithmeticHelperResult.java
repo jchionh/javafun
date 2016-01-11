@@ -15,6 +15,10 @@ public class ArithmeticHelperResult {
         this.value = value;
     }
 
+    /**
+     * gets result stored in our memeber
+     * @return
+     */
     public int getValue() {
         return value;
     }

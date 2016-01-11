@@ -13,11 +13,22 @@ import net.jzapper.Model.ArithmeticParam;
  *
  */
 public class ArithmeticHelperFactory {
+
+    /**
+     * creates the various helpers by the type passed in
+     * @param t the type class that is required
+     * @param a first parameter
+     * @param b second parameter
+     * @return  a instanced helper to perform the operation
+     */
     public static ArithmeticHelper createHelper(Class<? extends ArithmeticHelper> t, ArithmeticParam a, ArithmeticParam b) {
 
+        // Addition helper
         if (t == AdditionHelper.class) {
             return new AdditionHelper(a, b);
         }
+
+        // when we get here, we have an unhandled type, so just return null
         return null;
     }
 

@@ -14,10 +14,20 @@ import net.jzapper.Punches.Punch;
  */
 public class PunchFactory {
 
+    /**
+     * creates our punches!
+     * @param t
+     * @param id
+     * @return
+     */
     public static Punch createPunch(Class<? extends Punch> t, int id) {
+
+        // Basic punch
         if (t == Basic.class) {
             return new Basic(id);
         }
+
+        // arithemetic helper punch, this is golden! :P
         if (t == ArithmeticHelp.class) {
             return new ArithmeticHelp(id);
         }
